@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class open_the_book : MonoBehaviour
+{
+    public GameObject cover;
+    public float smooth = 5f;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyUp("space"))
+        {
+            if (cover.transform.rotation.eulerAngles.y > 180 || cover.transform.rotation.eulerAngles.y == 0)
+                cover.transform.Rotate(Vector3.down, smooth * Time.deltaTime, Space.World);
+        }
+    }
+}
