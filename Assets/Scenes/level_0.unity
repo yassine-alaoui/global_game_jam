@@ -441,9 +441,9 @@ MonoBehaviour:
   sentences:
   - Even in the tiniest forms of life
   - their comes a strugle of survival
-  - the hunt begins to develop its self
-  - feeding from all to assend to a better form
-  - and from one cell it turns into a multiple
+  - and the hunt to arise and grow kicks in
+  - feeding from other forms of life to grow
+  - and from one cell it grows into a multiple
   delay: 0.1
 --- !u!4 &571665120
 Transform:

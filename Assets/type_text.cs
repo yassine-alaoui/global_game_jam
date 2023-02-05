@@ -20,6 +20,8 @@ public class type_text : MonoBehaviour
         foreach (string sentence in sentences)
         {
             text.text = "";
+            yield return new WaitForSeconds(delay);
+            yield return new WaitForSeconds(delay);
             foreach (char letter in sentence.ToCharArray())
             {
                 text.text += letter;
