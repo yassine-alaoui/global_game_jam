@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class movePlayer : MonoBehaviour
+{
+    private Vector3 target;
+    public float speed = 5f;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePos = Input.mousePosition;
+            if (mousePos.y < 1000 && mousePos.y > 77 && mousePos.x < 1800 && mousePos.x > 100)
+            {
+                target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+                target.y = transform.position.y;
+            }
+        }
+        transform.position = Vector3.MoveTowards(transform.position, target, Random.Range(speed,speed * 5) * Time.deltaTime);
+    }
+}
