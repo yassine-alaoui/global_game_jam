@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class clickListen : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class clickListen : MonoBehaviour
     }
 
     void TaskOnClick(){
-		Vector3 end_posetion = new Vector3(-0.14f, 6.945f, 2.79f);
+        FindObjectOfType<AudioManager>().Play("click");
+        Vector3 end_posetion = new Vector3(-0.14f, 6.945f, 2.79f);
         if (is_true_camera == false)
         {
             is_true_camera = true;
@@ -56,8 +58,17 @@ public class clickListen : MonoBehaviour
             StartCoroutine("delai");
         else if (Input.GetKeyUp("space") && end == false)
         {
+             StartCoroutine(next_scene());
             book = canva.transform.GetChild(0).gameObject;
             book.GetComponent<AutoFlip>().FlipRightPage();
         }
+    }
+    IEnumerator next_scene()
+    {
+
+        yield return new WaitForSeconds(1f);
+        LeanTween.moveLocal(camera, new Vector3(0.03f, 6.94f, 3.08f), delei_of_camera )
+            .setEaseLinear().setOnComplete(() => { SceneManager.LoadScene(1); });
+
     }
 }

@@ -131,6 +131,11 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs" />
     <Compile Include="Assets/LeanTween/Examples/Scripts/Following.cs" />
+    <Compile Include="Assets/clickListen.cs" />
+    <Compile Include="Assets/scripts/sound/Sound.cs" />
+    <Compile Include="Assets/scripts/sound/AudioManager.cs" />
+    <Compile Include="Assets/scripts/sound/sound_controll.cs" />
+    <Compile Include="Assets/scripts/movePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

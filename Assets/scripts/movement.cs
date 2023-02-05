@@ -32,5 +32,14 @@ public class movement : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target, Random.Range(speed,speed * 5) * Time.deltaTime);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "eat")
+        {
+            LeanTween.scale(other.gameObject, new Vector3(0, 0, 0), 0.6f).setEase(LeanTweenType.easeInCirc).setOnComplete(() => { Destroy(other); });
+            timer.timelift += 20;
+        }
+        
+    }
 
 }

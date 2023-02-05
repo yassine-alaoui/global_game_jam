@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Example_2_Controled Flipping.unity
+    guid: 3c7a1ba24df07403ea4ff6ecc49b7a5f
+  - enabled: 1
+    path: Assets/Scenes/level_0.unity
+    guid: f2473ecccaf824b7bb9245525460baaf
   m_configObjects: {}

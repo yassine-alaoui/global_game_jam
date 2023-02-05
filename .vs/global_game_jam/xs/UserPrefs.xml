@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{41FF40AC-E24D-9DFA-C081-69CB9986BDD0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/gameplay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/clickListen.cs">
     <Files>
-      <File FileName="Assets/scripts/open_the_book.cs" Line="30" Column="29" />
-      <File FileName="Assets/scripts/scene01.cs" Line="10" Column="29" />
-      <File FileName="Assets/scripts/timer.cs" Line="29" Column="54" />
-      <File FileName="Assets/scripts/gameplay.cs" Line="8" Column="8" />
+      <File FileName="Assets/scripts/open_the_book.cs" Line="25" Column="6" />
+      <File FileName="Assets/scripts/timer.cs" Line="26" Column="21" />
+      <File FileName="Assets/scripts/gameplay.cs" Line="54" Column="74" />
+      <File FileName="Assets/scripts/movement.cs" Line="40" Column="52" />
+      <File FileName="Assets/scripts/AudioManager.cs" Line="8" Column="27" />
+      <File FileName="Assets/scripts/Sound.cs" Line="24" Column="43" />
+      <File FileName="Assets/scripts/sound/sound_controll.cs" Line="31" Column="38" />
+      <File FileName="Assets/clickListen.cs" Line="57" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,8 +16,9 @@
           <Node name="global_game_jam" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
-                <Node name="gameplay.cs" selected="True" />
+                <Node name="sound" expanded="True" />
               </Node>
+              <Node name="clickListen.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -22,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e7c1d3b-9800-4b2b-b10f-e1002560397c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="56cc23b2-2dca-4af0-bdf1-0f51af5b4238" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
